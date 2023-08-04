@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex gap-2 justify-between px-[100px] bg-slate-500 my-[30px]">
+        <div class="flex flex-col gap-4 border px-[15px] py-[12] my-[20px] bg-slate-300">
+            <div>
+                <h1 class="text-[30px]">Input Your Details</h1>
+            </div>
+            <div>
+                <form action="" class="flex flex-col" id="form">
+                    <div>
+                        <label for="" class="text-[35px]">Upload Image</label><br>
+                        <input type="file" name="" id="image">
+                    </div> <br>
+                    <div>
+                        <label for="">Surname:</label>
+                        <input type="text" class="surname outline-2" placeholder="Surname">
+                    </div> <br>
+                    <div>
+                        <label for="">Given Name:</label>
+                        <input type="text" class=" Given-Name outline-2" placeholder="Given Name">
+                    </div><br>
+                    <div>
+                        <label for="">Sex:</label>
+                        <select name="" id="sex">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="">Nationality:</label>
+                        <input type="text" class="outline-2 nation" placeholder="Nationality">
+                    </div><br>
+                    <div>
+                        <label for="">Date Of Birth:</label>
+                        <input type="date" class="outline-2 dob" name="" id="">
+                    </div><br>
+
+                    <div class="flex justify-center rounded-[50px] bg-blue-500 text-[30px] my-[10px] btn">
+                        <button class="text-center submit" id="nextBtn">NEXT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="hidden bg-blue-300 h-[290px] w-[520px] my-[30px] rounded-[20px]" id="cardContainer">
+        <div class="h-[130px] w-[130px] mx-[15px] my-[30px] bg-white">
+            <img src="" alt="" id="profileImage" class="w-full h-full">
+        </div>
+        <div class="flex flex-col mx-[15px] my-[30px] result">
+            <h1 class="text-blue-500">SURNAME</h1>
+            <div id="resultSurname">a</div>
+            <h1 class="text-blue-500">Given NAMES</h1>
+            <div id="resultGivenName"></div>
+            <h1 class="text-blue-500">SEX</h1>
+            <div id="resultSex"></div>
+            <h1 class="text-blue-500">NATIONALITY</h1>
+            <div id="resultnation"></div>
+            <h1 class="text-blue-500">DATE OF BIRTH</h1>
+            <div id="resultdob"></div>
+        </div>
+        <div class="my-[100px] mx-[20px]">
+            <h1 class="text-sm text-blue-500" id="DOCUMENT-NUMBER">DOCUMENT NUMBER<br>
+                <div id="resDOCUMENT-NUMBER"></div>
+                <h1 id="cardNumver">1234 1234 1234</h1>
+            </h1>
+            <h1 class="text-sm  text-blue-500" id="">DATE OF ISSUE</h1>
+            <div id="DateIssue"></div>
+            <h1 class="text-sm  text-blue-500">DATE OF EXPIRY</h1>
+            <div id="DateExpiry"></div><br>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
